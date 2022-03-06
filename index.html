@@ -38,7 +38,7 @@ article:hover {
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"> Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Honors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards and Honors</a></li>
                 </ul>
             </div>
         </nav>
@@ -79,7 +79,7 @@ article:hover {
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">NIT Surat <a class="social-icon" href="#education" onclick="educationDetails()"><i class="fa fa-medal"></i></a></h3>
+                            <h3 class="mb-0">NIT Surat </h3>
                             <div class="subheading mb-3">Bachelor of Technology</div>
                             <div>Electronics and Communication Engineering</div>
                         </div>
@@ -121,7 +121,7 @@ article:hover {
                             <div class="tile is-vertical is-12">
                               <div class="tile">
                                 <div class="tile is-parent">
-                                  <article onclick="showProject('snake-ai')" class="tile is-child notification">
+                                  <article onclick="showProject('rock-paper-scissors')" class="tile is-child notification">
                                     <p class="subheading mb-3">Rock Paper Scissors</p>
                                     <!-- <figure class="image"> -->
                                       <img src="img/snake.png">
@@ -129,7 +129,7 @@ article:hover {
                                   </article>
                                 </div>
                                 <div class="tile is-parent">
-                                  <article onclick="showProject('rps')" class="tile is-child notification">
+                                  <article onclick="showProject('whatsapp')" class="tile is-child notification">
                                     <p class="subheading mb-3">Whatsapp Chat Analyser</p>
                                     <figure class="image is-4by3">
                                       <img class="modal-trigger" data-target="project-2-modal" src="img/ggt.png">
@@ -137,7 +137,7 @@ article:hover {
                                   </article>
                                 </div>
                                 <div class="tile is-parent">
-                                  <article onclick="showProject('hec')" class="tile is-child notification">
+                                  <article onclick="showProject('audiobook')" class="tile is-child notification">
                                     <p class="subheading mb-3">Make your own audiobook</p>
                                     <figure class="image is-4by3">
                                       <img class="modal-trigger" data-target="project-3-modal" src="img/hec.png">
@@ -159,31 +159,18 @@ article:hover {
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Honoured Member of the <strong>Tech{know}logy Club</strong>, Amrita.
-                            <br>Conducted two workshops (Chatbots 101 and Hands-on Machine Learning) which were attended by more than 250 people totally
+                            Certified Professional Scrum Master-I 
+                          </li>
+                        <br>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Campus Winner for Case Study Competition organised by CAIRN India, 2015.
                         </li>
                         <br>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Received the <strong>Best Mentor Award</strong> at VMware’s Bootcamp Hackathon, 2020 - mentored the winning team of 4 new-grad hires
-
-                        </li>
-                        <br>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Youngest <a href="https://www.packtpub.com/authors/sourav-johar">author</a> to publish online courses for professionals and students at Packt Publishing, UK
-                        </li>
-                        <br>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Finalist in the Amrita Annual Public Speaking Contast, 2018
-                        </li>
-                        <br>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Won the 1st place in the CTF Event organised as part of the <strong>MooseCon Web Security Conference</strong>, Pune, 2019.
-                        </li>
-
+                            Runner-up for Case Study Competition organised by CAIRN India, 2014.
+                        </li>                    
                     </ul>
                 </div>
             </section>
@@ -201,62 +188,16 @@ article:hover {
 
 <script>
 
-function educationDetails() {
-  Swal.fire({
-  title: 'Graduated First Class with Distinction',
-  text: 'Top 5% in a batch of 300',
-  confirmButtonText: 'Cool',
-  showCloseButton: true,
-  showConfirmButton: false
-})
-}
-
-function vmwareDetails() {
-  Swal.fire({
-  title: 'Best Mentor Award, 2020',
-  text: "Mentored the winning team of 4 new graduates at VMware's annual Bootcamp Hackathon",
-  confirmButtonText: 'Cool',
-  showCloseButton: true,
-  showConfirmButton: false
-})
-}
-
-function snakeAIDetails() {
-  Swal.fire({
-  title: 'Research Paper in Published',
-  width: 800,
-  html: '<strong><p style="text-align: left"> Title </p></strong><p style="text-align: left">Fitness Function Design for Neuroevolution in Goal-finding Game Environments</p>' +
-        '<strong><p style="text-align: left"> Journal </p></strong><p style="text-align: left">Springer’s Communications in Computer and Information Science</p>' +
-        '<strong><p style="text-align: left"> Presented At </p></strong><p style="text-align: left">12th International Conference on Computational Collective Intelligence, Vietnam, 2020</p>',
-  showCloseButton: true,
-  showConfirmButton: false,
-  focusConfirm: true
-  })
-}
-
-function hecDetails() {
-  Swal.fire({
-  title: 'Research Paper Published',
-  width: 800,
-  html: '<strong><p style="text-align: left"> Title </p></strong><p style="text-align: left">A Layered Approach to Detect Elephants in Live Surveillance Video Streams using Convolutional Neural Networks </p>' +
-        '<strong><p style="text-align: left"> Journal </p></strong><p style="text-align: left">Journal of Intelligent & Fuzzy Systems, IOS Press, Netherlands </p>' +
-        '<strong><p style="text-align: left"> Presented At </p></strong><p style="text-align: left">Fifth International Symposium on Intelligent Systems Technologies and Applications, 2019 </p>',
-  showCloseButton: true,
-  showConfirmButton: false,
-  focusConfirm: true
-  })
-}
-
 function showProject(name) {
   if (name == 'other') {
     openLink('https://github.com/SouravJohar')
   }
 
-  if (name == "snake-ai") {
+  if (name == "rock-paper-scissors") {
     Swal.fire({
-    title: 'Snake AI',
+    title: 'Rock Paper Scissors using Computer Vision',
     width: 600,
-    html: '<p style="text-align: left">Evolving a population of artificial agents to play the Snake game using Neuroevolution, Reinforcement Learning and Search Algorithms</p>' +
+    html: '<p style="text-align: left">Play a game of rock, paper and scissors with the computer using your webcam in real time.</p>' +
           '<ul class="tags">' +
           '<li><p  class="tag">JavaScript</p></li>' +
           '<li><p  class="tag">NEAT</p></li>' +
@@ -264,35 +205,35 @@ function showProject(name) {
           '<li><p class="tag">Evolutionary Algorithms</p></li>' +
           '<li><p class="tag">Reinforcement Learning</p></li>' +
           '</ul>' +
-          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/snake-ai")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
+          '<a href="#intersts" onclick=openLink("https://github.com/ambujpawar/rock_paper_scissors")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
     showCloseButton: true,
     showConfirmButton: false,
     focusConfirm: true
     })
   }
 
-  if (name == "rps") {
+  if (name == "whatsapp") {
     Swal.fire({
     title: 'Go Get Tested',
     width: 600,
-    html: '<p style="text-align: left">An online Covid Testing service that lets patients book an appointment, track their covid test status, and digitally view their reports.</p>' +
+    html: '<p style="text-align: left">Using NLP techniques to analyse the whatsapp chats</p>' +
           '<ul class="tags">' +
           '<li><p  class="tag">Python</p></li>' +
           '<li><p  class="tag">FastAPI</p></li>' +
           '<li><p class="tag">AWS</p></li>' +
           '<li><p class="tag">Computer Vision</p></li>' +
           '</ul>' +
-          '<a href="#intersts" onclick=openLink("https://gogettested.com")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
+          '<a href="#intersts" onclick=openLink("https://github.com/ambujpawar/whatsapp_analyser")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
     showCloseButton: true,
     showConfirmButton: false
     })
   }
 
-  if (name == "hec") {
+  if (name == "audiobook") {
     Swal.fire({
-    title: 'Human Elephant Conflict Avoidance System',
+    title: 'Make your own audiobook',
     width: 600,
-    html: '<p style="text-align: left">A digital and real-time solution to prevent Human-Elephant conflicts across the forest fringes of India. This three-tier solution involves intelligent (Machine+Deep Learning) analysis of audio, video and vibrations gathered from the sensors deployed.</p>' +
+    html: '<p style="text-align: left"> Make your own audiobook in 5 lines of code</p>' +
           '<ul class="tags">' +
           '<li><p  class="tag">Python</p></li>' +
           '<li><p  class="tag">Scikit-learn</p></li>' +
@@ -303,42 +244,7 @@ function showProject(name) {
           '<li><p class="tag">Pandas</p></li>' +
           '<li><p class="tag">Raspberry Pi</p></li>' +
           '</ul>' +
-          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/hec-video")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
-    showCloseButton: true,
-    showConfirmButton: false
-    })
-  }
-
-  if (name == "handy") {
-    Swal.fire({
-    title: 'Handy',
-    width: 600,
-    html: '<p style="text-align: left">An interface/plugin to control a Media Player through interactive and extensive hand gestures. The plugin uses Computer Vision and Machine Learning to detect complex hand gestures like ”swipe left with two fingers up”.</p>' +
-          '<ul class="tags">' +
-          '<li><p  class="tag">Python</p></li>' +
-          '<li><p  class="tag">Scikit-learn</p></li>' +
-          '<li><p class="tag">OpenCV</p></li>' +
-          '<li><p class="tag">Tensorflow</p></li>' +
-          '</ul>' +
-          '<a href="#intersts" onclick=openLink("https://github.com/SouravJohar/handy")><i  style="font-size: 40px"class="fab fa-github"></i></a>' + '  <a href="#intersts" onclick=openLink("https://www.youtube.com/watch?v=-_9WFzgI7ak")><i  style="font-size: 40px"class="fab fa-youtube"></i></a>',
-    showCloseButton: true,
-    showConfirmButton: false
-    })
-  }
-
-  if (name == "att") {
-    Swal.fire({
-    title: 'Auto Attendance',
-    width: 600,
-    html: '<p style="text-align: left">A scalable and low latency IoT application to uniquely identify the presence of individual students in a classroom using facial information as a biometric. The prototype was integrated with our college’s attendance server and received 91% accuracy in determining the students present in our classroom.</p>' +
-          '<ul class="tags">' +
-          '<li><p  class="tag">Python</p></li>' +
-          '<li><p  class="tag">Scikit-learn</p></li>' +
-          '<li><p class="tag">OpenCV</p></li>' +
-          '<li><p class="tag">Django</p></li>' +
-          '<li><p class="tag">JavaScript</p></li>' +
-          '<li><p class="tag">MySQL</p></li>' +
-          '</ul>',
+          '<a href="#intersts" onclick=openLink("https://github.com/ambujpawar/create_your_own_audibook")><i  style="font-size: 40px"class="fab fa-github"></i></a>',
     showCloseButton: true,
     showConfirmButton: false
     })
